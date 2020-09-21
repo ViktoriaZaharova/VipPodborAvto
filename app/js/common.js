@@ -41,6 +41,28 @@ $('.reviews-slider').slick({
         '\t\tC52.942,116.507,52.942,124.327,57.633,129.007z"/>\n' +
         '</g>\n' +
         '</svg>\n</button>',
+
+    responsive: [
+        {
+            breakpoint: 1199,
+            settings: {
+                slidesToShow: 4,
+            }
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+
+    ]
 });
 
 //Добавляем всем элементам прозрачность
@@ -63,5 +85,27 @@ $(".reviews-slider").on("afterChange", function () {
 $('.partners-slider').slick({
     slidesToShow: 4,
     arrows: false,
-    dots: true
+    dots: true,
+    responsive: [
+        {
+            breakpoint: 1199,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+
+    ]
 });
+
