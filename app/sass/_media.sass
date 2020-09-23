@@ -146,6 +146,32 @@
   .list-social li
     margin: 0 0 0 15px
 
+  .p-100
+    padding: 70px 0
+
+  .main-contacts
+    padding: 50px 0 20px
+    h1
+      margin: 0 0 30px
+
+  .main-contacts-box__icon
+    width: 40px
+    height: 40px
+    min-width: 40px
+    margin: 0 15px 0 0
+
+  .main-contacts-box
+    margin: 0 0 30px
+    h3
+      font-size: 16px
+      margin: 0 0 12px
+
+  .maps
+    height: 400px
+
+  .main-contacts-wrapper
+    justify-content: space-around
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
   .main-home
@@ -255,6 +281,13 @@
   .footer-bottom .links-accent
     margin: 0 auto
 
+  .panel_heading__head
+    padding: 20px 25px
+    &:after
+      font-size: 24px
+    h3
+      font-size: 20px
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 575px)
@@ -314,6 +347,30 @@
     height: 45px
     padding: 10px
 
+  .panel_heading
+    margin: 0 0 15px
+
+  .panel_heading__head
+    padding: 15px 20px
+    &:after
+      width: 25px
+      height: 25px
+      min-width: 25px
+      font-size: 20px
+    h3
+      font-size: 18px
+
+  .question h2
+    margin: 0 0 30px
+
+  .p-100
+    padding: 40px 0
+
+  .main-contacts-wrapper
+    justify-content: space-between
+
+  .main-contacts-box
+    width: 50%
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 420px)
@@ -335,29 +392,17 @@
   h2
     font-size: 24px
 
-/*==========  Mobile First  ==========*/
+  .main-contacts-box
+    width: 100%
 
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
+  .main-contacts-box__body
+    max-width: none
 
+  .list-social-contacts
+    max-width: none
+    justify-content: space-around
+    li
+      margin: 0 0 15px
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
-
+  .maps
+    height: 300px

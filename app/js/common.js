@@ -19,8 +19,6 @@ $('.clients-slider').slick({
         '</svg>\n</button>',
 });
 
-$('[name=phone]').mask('+7(999) 999 - 99 - 99');
-
 
 $('.reviews-slider').slick({
     slidesToShow: 6,
@@ -109,3 +107,11 @@ $('.partners-slider').slick({
     ]
 });
 
+// mask phone
+$('[name=phone]').mask('+7(999) 999 - 99 - 99');
+
+// accordeon
+$('.panel_heading__head').click(function () {
+    $(this).toggleClass('in').next().slideToggle();
+    $('.panel_heading__head').not(this).removeClass('in').next().slideUp();
+});
