@@ -1486,30 +1486,12 @@ footer
 
 .list-check
   li
-    padding: 0 0 0 33px
-    &:before
-      content: ''
-      position: absolute
-      left: 0
-      top: 0
-      width: 16px
-      height: 16px
-      box-shadow: 0px 11px 18px 0 rgba(61, 134, 239, 0.42)
-      background: linear-gradient(to top, #438bf6, #387cde)
-      border-radius: 50%
-    &:after
-      content: ''
-      position: absolute
-      left: 2px
-      top: 1px
-      z-index: 1
-      background: url("../img/check.png") no-repeat center
-        size: contain
-      width: 14px
-      height: 11px
+    display: flex
+    align-items: flex-start
+
   .no-check
     &:before
-      box-shadow: 0px 11px 18px 0 rgba(255, 0, 0, 0.42)
+      box-shadow: 0 11px 18px 0 rgba(255, 0, 0, 0.42)
       background: #ff0000
     &:after
       width: 8px
@@ -1518,6 +1500,31 @@ footer
         size: contain
       left: 4px
       top: 4px
+
+.icon-check
+  background: linear-gradient(to top, #438bf6, #387cde)
+  border-radius: 50%
+  width: 16px
+  min-width: 16px
+  height: 16px
+  box-shadow: 0 11px 18px 0 rgba(61, 134, 239, 0.42)
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 3px 20px 0 0
+  padding: 0 0 0 3px
+
+.icon-nocheck
+  box-shadow: 0 11px 18px 0 rgba(255, 0, 0, 0.42)
+  background: #ff0000
+  width: 16px
+  height: 16px
+  min-width: 16px
+  margin: 2px 20px 0 0
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 50%
 
 //laesing page
 .main-leasing
