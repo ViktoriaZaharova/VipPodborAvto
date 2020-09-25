@@ -103,6 +103,7 @@ button, .btn
   width: 100%
   max-width: 300px
   height: 70px
+  -webkit-appearance: none
   &:hover, &:focus
     outline: none
 
@@ -274,6 +275,9 @@ header
   padding: 20px 0
 
 //menu
+.navbar-collapse
+  transition: none
+
 .navbar-toggler
   padding: 0
   border: none
@@ -286,9 +290,10 @@ header
   flex-direction: column
   align-items: center
   justify-content: space-between
+  border-radius: 0
   span
     display: block
-    width: 100%
+    width: 20px
     height: 2px
     background: $text
     transition: .3s ease
@@ -307,7 +312,7 @@ header
   color: #272623
   font-size: 16px
 
-.dropdown-toggle
+.btn-toggle
   width: 5px
   height: 10px
   display: flex
@@ -317,10 +322,22 @@ header
   &::after
     display: none
   .icon-svg
-    transform: rotate(-90deg)
+
     width: 100%
     height: 100%
     fill: $text
+
+.dropdown-toggle
+  display: flex
+  align-items: center
+  &::after
+    transform: rotate(-90deg)
+    border: none
+    width: 5px
+    height: 10px
+    margin: 0 0 0 8px
+    background: url("../img/prev.svg") no-repeat center
+      size: contain
 
 .dropdown
   display: flex
@@ -397,6 +414,7 @@ header
   justify-content: center
   min-height: 165px
   height: 100%
+  margin: 0 20px 0 0
 
 .economy-box-content
   max-width: 230px
@@ -807,6 +825,7 @@ footer
   margin: 29px 0 17px
   line-height: 1.88
   display: none
+  padding: 0 0 0 20px
 
 .panel_heading__head
   cursor: pointer
