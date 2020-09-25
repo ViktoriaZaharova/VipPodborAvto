@@ -2358,6 +2358,10 @@ footer {
     width: 100%;
     margin: 0 0 10px; } }
 
+@media only screen and (max-width: 520px) {
+  .footer-box {
+    width: 50%; } }
+
 @media only screen and (max-width: 480px) {
   header {
     padding: 10px 0; }
@@ -2444,4 +2448,6 @@ footer {
         -ms-flex-pack: start;
             justify-content: flex-start; }
   .list-share {
-    margin: 10px 0 0; } }
+    margin: 10px 0 0; }
+  .footer-box {
+    width: 100%; } }
