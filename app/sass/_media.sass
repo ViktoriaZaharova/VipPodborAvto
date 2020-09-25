@@ -70,6 +70,22 @@
   .main-blog5-img
     margin: 0 0 40px -120px
 
+  .main-partners-img
+    margin: 0 0 -50px -100px
+
+  .price-card
+    max-width: 330px
+
+@media only screen and (max-width : 1040px)
+  .price-card
+    margin: 0 0 40px
+
+  .prices
+    padding: 40px 0 0
+
+  .prices-wrapper
+    justify-content: space-around
+
 @media only screen and (max-width : 991px)
   .navbar-toggler
     display: flex
@@ -113,7 +129,7 @@
   h1
     font-size: 40px
 
-  h2
+  h2, .comment h2
     font-size: 30px
 
   .economy-box
@@ -177,7 +193,7 @@
   .list-social li
     margin: 0 0 0 15px
 
-  .p-100
+  .p-100, .reviews.p-100
     padding: 70px 0
 
   .main-contacts
@@ -243,6 +259,15 @@
   .main-blog5-img
     margin: 0 0 40px -60px
 
+  .partners-car-dealerships h2
+    margin: 0 0 30px
+
+  .about-trade-img
+    margin: 0 auto
+
+  .about-trade
+    padding: 60px 0
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
   .main-home
@@ -259,6 +284,19 @@
     font-size: 30px
     br
       display: none
+
+  .main-politics h1
+    font-size: 30px
+    margin: 0 0 30px
+
+  .main-politics__box h3
+    font-size: 19px
+    margin: 0 0 15px
+
+  .main-politics__box
+    font-size: 14px
+    line-height: 2
+    margin: 0 0 30px
 
   h2
     font-size: 28px
@@ -373,6 +411,57 @@
     margin: 0 0 20px
     width: 49%
 
+  .main-article
+    h1
+      margin: 20px auto 30px
+
+  .date-article
+    margin: 0 0 15px
+
+  .share
+    font-size: 18px
+    margin: 20px 0
+
+  .list-share
+    li
+      margin: 0 10px 0 0
+
+  .comment
+    padding: 0 0 20px
+    h2
+      font-size: 28px
+    .title-description
+      margin: 10px auto 20px
+
+  .form-comment .form-group
+    width: 49%
+
+  .form-comment .form-group-message, .form-comment .form-group-checkbox
+    width: 100%
+
+  .form-comment textarea
+    height: 150px
+
+  textarea
+    font-size: 16px
+    padding: 20px
+
+  .form-comment input
+    font-size: 16px
+    padding: 0 20px
+
+  .form-comment button
+    margin: 0 auto
+
+  .price-card h3
+    font-size: 22px
+
+  .price-card__price
+    padding: 10px 0
+    margin: 10px auto
+    .the-sum
+      font-size: 22px
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 575px)
   .economy-box-number, .economy-box-number:nth-child(2)
@@ -415,6 +504,12 @@
   .sales-card__title
     font-size: 24px
     margin: 10px auto 15px
+
+  .form-comment .form-group
+    width: 100%
+
+  .main-politics h1
+    font-size: 24px
 
 @media only screen and (max-width : 480px)
   header
@@ -461,7 +556,7 @@
   .question h2
     margin: 0 0 30px
 
-  .p-100
+  .p-100, .reviews.p-100
     padding: 40px 0
 
   .main-contacts-wrapper
@@ -469,6 +564,9 @@
 
   .main-contacts-box
     width: 50%
+
+  .main-politics h1
+    font-size: 20px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 420px)
@@ -487,7 +585,7 @@
   h1
     font-size: 28px
 
-  h2
+  h2, .comment h2
     font-size: 24px
 
   .main-contacts-box
@@ -504,4 +602,12 @@
 
   .maps
     height: 300px
+
+  .share
+    flex-direction: column
+    align-items: flex-start
+    justify-content: flex-start
+
+  .list-share
+    margin: 10px 0 0
 
