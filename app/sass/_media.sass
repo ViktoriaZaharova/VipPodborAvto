@@ -268,7 +268,30 @@
   .about-trade
     padding: 60px 0
 
+  .payment-type
+    margin: 0 20px 0 0
+    p
+      margin: 0 20px 0 0
+    label
+      margin: 0 20px 0 0
+
+  .form-calculate .form-group
+    width: 24%
+
 /* Small Devices, Tablets */
+@media only screen and (max-width : 920px)
+  .form-bottom
+    flex-direction: column
+    align-items: flex-start
+
+  .payment-type
+    margin: 0 0 20px
+
+  .form-calculate
+    button
+      margin: 0 auto
+
+
 @media only screen and (max-width : 767px)
   .main-home
     padding: 70px 0 0
@@ -462,6 +485,43 @@
     .the-sum
       font-size: 22px
 
+  .mt-60
+    margin-top: 40px
+
+  .form-calculate .form-group
+    width: 49%
+
+  .calculate
+    padding: 70px 0
+    .title-description
+      text-align: left
+      margin: 20px 0 30px
+
+  .payment-type
+    font-size: 16px
+    flex-wrap: wrap
+
+  .radio
+    font-size: 14px
+
+  .form-calculate .form-group
+    margin: 0 0 20px
+
+  .form-group-title
+    font-size: 14px
+    margin: 0 0 5px
+
+  .form-calculate
+    .form-group
+      input
+        height: 60px
+
+  select
+    font-size: 16px
+    font-weight: normal
+    padding: 0 30px 0 20px
+    height: 60px
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 575px)
   .economy-box-number, .economy-box-number:nth-child(2)
@@ -510,6 +570,13 @@
 
   .main-politics h1
     font-size: 24px
+
+  .payment-type
+    p
+      margin: 0 0 5px
+    .radio
+      width: 100%
+      margin: 0 0 10px
 
 @media only screen and (max-width : 480px)
   header
@@ -567,6 +634,9 @@
 
   .main-politics h1
     font-size: 20px
+
+  .form-calculate .form-group
+    width: 100%
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 420px)
